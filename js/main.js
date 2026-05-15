@@ -52,3 +52,36 @@ function handleInput(el) {
   // ton calcul
   calc();
 }
+
+
+(function () {
+  const timerEl = document.getElementById("timer");
+  const timerTextEl = document.getElementById("timer-text");
+  timerTextEl.textContent = "Season 2 Start in :";
+
+  // Date cible : 19 mai de l'année en cours à 00:00:00
+  const targetDate = new Date(new Date().getFullYear(), 4, 19, 0, 0, 0);
+
+  function updateTimer() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      timerEl.textContent = "* Live data: 3 bracket(s) loaded";
+      timerTextEl.textContent = "Season 2 is live!";
+      clearInterval(interval);
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    timerEl.textContent =
+      `${days}j ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateTimer();
+  const interval = setInterval(updateTimer, 1000);
+})();
