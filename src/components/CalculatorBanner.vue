@@ -1,8 +1,12 @@
 <template>
 <div id="calculator-banner"
-class="flex items-center justify-center min-h-[500px]"
-:style="backgroundStyle">
-  <div class="max-w-5xl w-full text-center">
+class="flex items-center justify-center min-h-[500px] relative">
+  <img src="../assets/images/banner/banner-calculator-green.webp"
+  alt="Arena Points Calculator Background"
+  class="absolute inset-0 w-full h-full object-cover"
+  loading="lazy"
+  >
+  <div class="max-w-5xl w-full text-center relative z-10">
 
     <!-- TITLE -->
     <h1 class="text-4xl md:text-6xl font-bold tracking-wider text-shadow-wow font-morpheus
@@ -26,12 +30,6 @@ class="flex items-center justify-center min-h-[500px]"
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import backgroundImg from '../assets/images/banner/banner-calculator-green.webp';
-
-const backgroundStyle = computed(() => ({
-  backgroundImage: `url(${backgroundImg})`,
-}));
 </script>
 
 <style scoped>

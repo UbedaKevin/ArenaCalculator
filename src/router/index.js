@@ -26,6 +26,26 @@ const routes = [
     name: 'tierlist',
     component: () => import('../views/TierListView.vue'),
   },
+  {
+    path: '/class-guide',
+    name: 'classguide',
+    component: () => import('../views/ClassGuideView.vue'),
+  },
+  {
+    path: '/ladder',
+    name: 'ladder',
+    component: () => import('../views/LadderView.vue'),
+  },
+  {
+    path: '/tools',
+    name: 'tools',
+    component: () => import('../views/ToolsView.vue'),
+  },
+  {
+    path: '/meta',
+    name: 'meta',
+    component: () => import('../views/MetaView.vue'),
+  },
 ];
 
 const router = createRouter({

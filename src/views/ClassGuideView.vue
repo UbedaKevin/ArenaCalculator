@@ -1,5 +1,5 @@
 <template>
-    <div class="page-tier-list">
+    <div class="page-class-guide">
       <div>
         <NavBar />
       </div>
