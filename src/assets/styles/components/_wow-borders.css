@@ -1,0 +1,29 @@
+.border-metal {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("../../images/cadreBouton.png") 30 round;
+}
+
+.border-button {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url("../../images/contourButton.png") 30 round;
+}
+
+.border-calculator {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url("../../images/border/border-calculator.png") 30 round;
+}
+
+.bracket-card {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url("../../images/border/border-gold-calculator.png") 30 round;
+}
+
+.border-inner-calculator {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url("../../images/border/border-calculator.png") 30 round;
+}

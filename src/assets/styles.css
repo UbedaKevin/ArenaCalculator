@@ -1,0 +1,327 @@
+:root {
+    --wow-gold: #EEBF5F;
+    --wow-gold-dark: #6A6142;
+    --wow-red: #C41E3A;
+
+    --bracket-2v2: #DA6D2F;
+    --bracket-3v3: #2780B2;
+    --bracket-5v5: #5BBA5B;
+
+    --wow-metal: #828382;
+    --wow-text-main: #D7C793;
+
+    --wow-amber: #D0A66B;
+
+    --wow-gray: #989897;
+}
+
+/* BRACKETS */
+
+.bracket-2v2 {
+    color: var(--bracket-2v2);
+}
+
+.bracket-3v3 {
+    color: var(--bracket-3v3);
+}
+
+.bracket-5v5 {
+    color: var(--bracket-5v5);
+}
+
+.border-2v2 {
+    border-color: var(--bracket-2v2);
+}
+
+.border-3v3 {
+    border-color: var(--bracket-3v3);
+}
+
+.border-5v5 {
+    border-color: var(--bracket-5v5);
+}
+
+@font-face {
+  font-family: 'ArialN';
+  src: url('../assets/fonts/ARIALN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Morpheus';
+  src: url('../assets/fonts/MORPHEUS.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Skurri';
+  src: url('../assets/fonts/SKURRI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FrizQuadrata';
+  src: url('../assets/fonts/FRIZQT__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.text-shadow-wow {
+text-shadow:
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000,
+  -2px -2px 0 #000,
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000,
+   0px  0px 6px #000;
+}
+
+.text-shadow-wow-small {
+    text-shadow: 3px 1px 1px #000000;
+}
+
+.ArialN {
+  font-family: 'ArialN';
+}
+
+.Skurri {
+  font-family: 'Skurri';
+}
+
+.FrizQuadrata {
+  font-family: 'FrizQuadrata';
+}
+
+.morpheus {
+  font-family: 'Morpheus';
+}
+
+.bg-dark-overlay {
+  background-color: rgba(32, 32, 32, 0.9);
+}
+
+.bg-body {
+    background: url('https://wow.zamimg.com/uploads/blog/images/52601-calculating-arena-points-in-burning-crusade-classic-anniversary.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* COLOR FONT */
+.text-orange {
+    color: var(--bracket-2v2)
+}
+
+.text-blue {
+    color: var(--bracket-3v3)
+}
+
+.text-green {
+    color: var(--bracket-5v5)
+}
+
+.text-amber {
+    color: var(--wow-amber)
+}
+
+.text-wow-gold {
+    color: var(--wow-gold);
+}
+
+.text-wow-muted {
+    color: var(--wow-gold-dark);
+}
+
+.border-wow-metal {
+    border-color: var(--wow-metal);
+}
+
+.text-wow-main {
+    color: var(--wow-text-main);
+}
+
+.text-wow-red {
+    color: var(--wow-red);
+}
+
+.text-wow-gray {
+    color: var(--wow-gray);
+}
+
+.text-gradient-gold {
+background: linear-gradient(
+    to bottom,
+    #FCC74D,
+    #985106
+  );
+
+  /* gradient appliqué au texte */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  /* glow (drop-shadow équivalent) */
+  filter: drop-shadow(0 0 10px rgba(252, 199, 77, 0.4));
+}
+
+/* BORDURE GLOW */
+
+.side-border-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.side-border-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.border-right-glow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.border-right-glow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #fbbf24;
+  transform: translate(50%, -50%) rotate(225deg);
+}
+
+.border-right-glow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #fbbf24;
+  transform: translate(50%, 50%) rotate(135deg);
+}
+
+.border-left-glow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+/* coin haut */
+.border-left-glow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #fbbf24;
+  transform: translate(-50%, -50%) rotate(315deg);
+}
+
+/* coin bas */
+.border-left-glow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #fbbf24;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+
+.border-top-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.border-bottom-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.borderMetal {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(../assets/images/cadreBouton.png) 30 round;
+}
+
+.borderButton {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url(../assets/images/contourButton.png) 30 round;
+}
+
+.hero-title{
+    color:#d8a74a;
+
+    text-shadow:
+        /* contour */
+        -1px -1px 0 #3a1b00,
+         1px -1px 0 #3a1b00,
+        -1px  1px 0 #3a1b00,
+         1px  1px 0 #3a1b00,
+
+        /* ombre */
+         0 3px 4px rgba(0,0,0,.9),
+         0 6px 12px rgba(0,0,0,.7),
+
+        /* glow */
+         0 0 6px rgba(255,190,80,.30),
+         0 0 12px rgba(255,150,40,.20);
+}

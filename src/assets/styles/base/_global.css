@@ -1,0 +1,14 @@
+.bg-body {
+  background-image: url("https://wow.zamimg.com/uploads/blog/images/52601-calculating-arena-points-in-burning-crusade-classic-anniversary.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-dark-overlay {
+  background-color: rgba(32, 32, 32, 0.9);
+}
+
+.bg-dark-calculator {
+  background-color: #080806;
+}

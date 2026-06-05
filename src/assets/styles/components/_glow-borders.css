@@ -1,0 +1,32 @@
+.side-border-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.side-border-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.side-border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #fbbf24, transparent);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}

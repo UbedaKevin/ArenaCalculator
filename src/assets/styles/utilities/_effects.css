@@ -1,0 +1,48 @@
+.text-shadow-wow {
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000,
+     0 0 6px #000;
+}
+
+.text-shadow-wow-small {
+  text-shadow: 3px 1px 1px #000;
+}
+
+.logo-glow {
+  filter:
+    drop-shadow(0 0 4px rgba(255, 215, 100, 0.4))
+    drop-shadow(0 0 12px rgba(255, 180, 0, 0.3));
+}
+
+.icon-glow {
+  filter:
+    drop-shadow(0 0 2px rgba(255, 180, 50, 0.9))
+    drop-shadow(0 0 6px rgba(255, 140, 0, 0.8))
+    drop-shadow(0 0 12px rgba(255, 100, 0, 0.6));
+  transition: all 0.25s ease;
+}
+
+.icon-glow:hover {
+  filter:
+    drop-shadow(0 0 4px rgba(255, 210, 100, 1))
+    drop-shadow(0 0 10px rgba(255, 180, 0, 0.9))
+    drop-shadow(0 0 20px rgba(255, 120, 0, 0.8))
+    drop-shadow(0 0 30px rgba(255, 80, 0, 0.5));
+
+  transform: scale(1.08);
+}
+
+.glow-gold{
+  filter:
+    drop-shadow(0 0 2px rgba(255, 180, 50, 0.9))
+    drop-shadow(0 0 6px rgba(255, 140, 0, 0.8))
+    drop-shadow(0 0 12px rgba(255, 100, 0, 0.6));
+  transition: all 0.25s ease;
+}

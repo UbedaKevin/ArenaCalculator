@@ -1,0 +1,35 @@
+.text-wow-gold {
+  color: var(--wow-gold);
+}
+
+.text-wow-main {
+  color: var(--wow-text-main);
+}
+
+.text-wow-muted {
+  color: var(--wow-gold-dark);
+}
+
+.text-wow-red {
+  color: var(--wow-red);
+}
+
+.text-wow-gray {
+  color: var(--wow-gray);
+}
+
+.text-amber {
+  color: var(--wow-amber);
+}
+
+.text-orange {
+    color: var(--bracket-2v2)
+}
+
+.text-blue {
+    color: var(--bracket-3v3)
+}
+
+.text-green {
+    color: var(--bracket-5v5)
+}
