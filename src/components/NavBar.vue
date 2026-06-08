@@ -1,6 +1,6 @@
 <template>
   <nav class="w-full border-metal bg-gradient-to-b
-  from-[#181512] via-[#181512] to-black">
+  from-[#181512] via-[#181512] to-black ">
 
     <!-- TOP BAR -->
     <div class="flex items-center justify-between px-4 py-2">

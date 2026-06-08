@@ -5,7 +5,7 @@
             <p class="text-wow-gold text-xl font-bold uppercase">
             <span class="text-2xl">W</span>EEKLY REWARDS
             </p>
-            <div class="side-border-bottom "></div>
+            <div class="side-border-bottom"></div>
         </div>
         <div class="relative p-4"
           :style="backgroundStyle">
@@ -13,7 +13,7 @@
                 <span class="text-3xl">A</span>rena Points</p>
                 <p class="text-wow-gold text-8xl font-morpheus icon-glow">
                   {{ props.arenaPoints }}</p>
-                <div class="side-border-bottom "></div>
+                <div class="side-border-bottom"></div>
           </div>
           <div class="relative py-4">
             <p class="text-wow-gold text-xl font-bold uppercase">
@@ -26,25 +26,25 @@
               <div>
                 <p class="text-2xl font-semibold font-cormorant">{{ item.label }}</p>
               </div>
-              <div>
-                <p class="text-2xl font-semibold font-morpheus"
+              <div class="font-morpheus">
+                <p class="text-2xl font-semibold"
                  v-if="item.label === 'Bracket Multiplier'">
                   <span class="text-2xl font-cormorant">x</span> {{ item.value }}
                 </p>
-                <p class="text-2xl font-semibold font-morpheus"
+                <p class="text-2xl font-semibold "
                  v-else>
                   {{ item.value }}
                 </p>
               </div>
             </div>
-            <div class="side-border-bottom "></div>
+            <div class="side-border-bottom"></div>
           </div>
           <div class="py-4 px-6">
             <p class="text-wow-gold text-xl font-bold uppercase">
             <span class="text-2xl">S</span>EASON PROJECTION
             </p>
             <p class="font-cormorant text-wow-gold text-xl p-1">
-              After 4 weeks : {{ props.progress }} / 5000 ( Remember Cap points is 5000)
+              After 4 weeks : {{ props.progress }} / 5000 ( Remember Cap is at 5000 )
             </p>
             <div class="relative border-calculator w-full overflow-hidden">
               <div class="absolute top-0 left-0 inner-border rounded-full glow-gold"

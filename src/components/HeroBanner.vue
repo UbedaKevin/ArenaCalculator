@@ -1,8 +1,12 @@
 <template>
-<div id="hero" class="flex items-center justify-center px-6 md:mt-30 mt-10">
-
+<div id="hero" class="flex items-center justify-center h-screen relative">
+<img src="../assets/images/orgri.webp"
+  alt="Arena Points Calculator Background"
+  class="absolute inset-0 w-full h-full object-cover z-0"
+  loading="lazy"
+  >
+<div class="flex items-center justify-center px-6 relative z-50 md:mt-30 mt-20">
   <div class="max-w-5xl w-full text-center">
-
     <!-- TITLE -->
     <h1 class="text-4xl md:text-6xl font-bold tracking-wider text-shadow-wow font-morpheus
     text-wow-gold hero-title">
@@ -29,7 +33,8 @@
     </p>
 
     <!-- CTA ICON ROW -->
-  <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto rounded-xl bg-black/40">
+  <div class="mt-10 grid grid-cols-2 md:grid-cols-4
+  gap-4 max-w-3xl mx-auto rounded-xl bg-black/40 z-10">
   <CTAItem
     v-for="item in ctaItems"
     :key="item.text"
@@ -54,6 +59,7 @@
     </div>
   </div>
 </div>
+</div>
 </template>
 
 <script setup>
@@ -74,7 +80,7 @@ const goToCalculator = () => {
 };
 
 const goToGuides = () => {
-  router.push('/guides');
+  router.push('/class-guide');
 };
 
 const ctaItems = [
@@ -86,7 +92,7 @@ const ctaItems = [
   {
     icon: classGuidesIcon,
     text: 'Class Guides',
-    route: '/guides',
+    route: '/class-guide',
   },
   {
     icon: tierListsIcon,

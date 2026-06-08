@@ -27,3 +27,13 @@
   padding: 6px;
   border-image: url("../../images/border/border-calculator.png") 30 round;
 }
+
+.border-table-preset {
+  border: 10px solid transparent;
+  padding: 6px;
+  border-image: url("../../images/border/border-table-preset-removebg-preview.png") 30 round;
+}
+
+.border-table-preset {
+  border: 1px solid var(--border-table-preset);
+}
