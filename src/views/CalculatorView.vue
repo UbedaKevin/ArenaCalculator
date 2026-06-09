@@ -40,6 +40,18 @@
       :bracket="selectedBracket" />
       <CompareBracket />
     </div>
+    <div class="px-4 py-8">
+      <div class="border-calculator relative min-h-[340px] w-full"
+      style="padding-top: 3rem;">
+        <h2
+          class="absolute top-[-30px] left-0 right-0 h-12 bg-dark-calculator
+          text-wow-gold text-3xl font-morpheus w-fit px-12 mx-auto"
+        >
+          Related Resources
+        </h2>
+        <NavigationGrid />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -57,6 +69,7 @@ import CompareBracket from '@/components/CompareBracket.vue';
 import WeeklyArenaGoal from '@/components/WeeklyArenaGoal.vue';
 import calcPoints from '@/composables/calculateBestRating';
 import calcRatingNeeded from '@/composables/calcRatingNeeded';
+import NavigationGrid from '@/components/NavigationGrid.vue';
 
 // import backgroundVideo from '../assets/images/orcStrongold.mp4';
 

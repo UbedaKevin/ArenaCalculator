@@ -38,6 +38,11 @@ const routes = [
     name: 'meta',
     component: () => import('../views/MetaView.vue'),
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notfound',
+    component: () => import('../views/NotFoundView.vue'),
+  },
 ];
 
 const router = createRouter({

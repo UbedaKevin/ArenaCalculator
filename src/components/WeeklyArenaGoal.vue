@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex gap-4 flex-col lg:flex-row">
+        <div class="flex gap-4 flex-col lg:flex-row pb-4">
             <div class="min-w-[320px]">
                 <div class="p-4 text-wow-gold border-calculator w-full"
                 :style="backgroundStyle">
@@ -119,7 +119,11 @@
 
                 <!-- Contenu -->
                 <div class="relative z-10 p-4">
-                    <p>Higher rating = More points</p>
+                    <div class="flex items-center gap-2">
+                        <span class="flex-shrink-0 mr-3" v-html="warning">   </span>
+                        <span>Higher rating = More points</span>
+                    </div>
+
                     <p>Points are calculated based on your performance</p>
                 </div>
             </div>
@@ -177,6 +181,8 @@ const emit = defineEmits([
 const handleCalculate = () => {
   emit('handleCalculate');
 };
+
+const warning = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" /></svg>';
 </script>
 
 <style scoped>
