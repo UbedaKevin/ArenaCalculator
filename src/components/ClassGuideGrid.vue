@@ -6,12 +6,12 @@
     :style="{ backgroundImage: `url(${item.image})` }"
     class="h-68 rounded-xl bg-cover bg-center overflow-hidden
     transition-transform duration-300 cursor-pointer
-    border-calculator card"
+    border-class-guide card"
   >
     <div class="h-full flex items-end justify-center
      p-4 bg-gradient-to-t from-black/80 to-transparent">
      <div class="flex flex-col items-center gap-2">
-     <p class="text-wow-gold font-cormorant text-3xl font-bold uppercase shadow-lg">
+     <p class="text-wow-gold font-friz text-3xl font-bold uppercase test">
         <span class="text-4xl">{{ item.name.slice(0, 1) }}</span>{{ item.name.slice(1) }}
      </p>
       <RedButton
@@ -70,5 +70,9 @@ const goToGuide = (route) => {
 
 .card:hover {
   background-size: 110%;
+}
+
+.test {
+text-shadow: 1px 1px 0px #787878;
 }
 </style>
