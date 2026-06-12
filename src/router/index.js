@@ -24,6 +24,12 @@ const routes = [
     component: () => import('../views/ClassGuideView.vue'),
   },
   {
+    path: '/class-guide/:className',
+    name: 'classguide-detail',
+    component: () => import('../views/ClassGuideDetailView.vue'),
+    props: true,
+  },
+  {
     path: '/ladder',
     name: 'ladder',
     component: () => import('../views/LadderView.vue'),

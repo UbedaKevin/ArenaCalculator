@@ -28,8 +28,9 @@
 
     <!-- SUBTITLE -->
     <p class="mt-6 text-gray-300 text-lg md:text-2xl shadow-2xl
-     max-w-2xl mx-auto font-cormorant">
-      Everything you need to dominate TBC Classic Arena Season 2.
+     max-w-2xl mx-auto font-cormorant font-semibold">
+      Everything you need to dominate TBC Classic Arena Season
+      <span class="text-xl md:text-4xl">2</span>.
     </p>
 
     <!-- CTA ICON ROW -->

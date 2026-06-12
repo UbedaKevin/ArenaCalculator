@@ -71,7 +71,7 @@
                             :class="['transform', isClickeddown ? 'scale-90' : '']">
                         </div>
                     </div>
-                    <div class="flex mt-4 min-[1330px]:mt-0 md:ml-8 p-2">
+                    <div class="flex mt-4 min-[1330px]:mt-0 min-[1340px]:ml-8 p-2">
                         <RedButton
                         text="Calculate"
                         :img="redButtonImage"
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex gap-4 flex-col lg:flex-row pb-4">
+        <div class="flex gap-4 flex-col min-[1340px]:flex-row pb-4">
             <div class="min-w-[320px]">
                 <div class="p-4 text-wow-gold border-calculator w-full"
                 :style="backgroundStyle">

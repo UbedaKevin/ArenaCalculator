@@ -1,16 +1,27 @@
 <template>
-  <div class="page-tier-list h-screen flex flex-col overflow-hidden">
-    <NavBar />
-    <div
-      class="flex-1 bg-center bg-cover bg-no-repeat"
-      :style="{
-        backgroundImage: `url(${banner})`
-      }"
-    />
-  </div>
+  <main class="min-h-screen">
+    <section class="relative min-h-screen">
+      <div class="relative z-30 flex flex-col bg-dark-calculator">
+        <NavBar />
+        <div class="w-full max-w-7xl mx-auto px-4 py-8">
+          <ClassGuideGrid />
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script setup>
 import NavBar from '@/components/NavBar.vue';
-import banner from '@/assets/images/banner/926f304d-8d74-4fc0-a10d-9a8663205931.webp';
+import ClassGuideGrid from '@/components/ClassGuideGrid.vue';
 </script>
+
+<style scoped>
+.section-divider {
+  height: 8px;
+  background-image: url('../assets/images/border/section-border.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+</style>

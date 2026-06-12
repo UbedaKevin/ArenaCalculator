@@ -1,5 +1,5 @@
 .border-metal {
-  border: 10px solid transparent;
+  border: 8px solid transparent;
   padding: 15px;
   border-image: url("../../images/cadreBouton.png") 30 round;
 }
@@ -36,4 +36,10 @@
 
 .border-table-preset {
   border: 1px solid var(--border-table-preset);
+}
+
+.border-section {
+  border: 5px solid transparent;
+  padding: 0px;
+  border-image: url("../../images/cadreBouton.png") 30 round;
 }
